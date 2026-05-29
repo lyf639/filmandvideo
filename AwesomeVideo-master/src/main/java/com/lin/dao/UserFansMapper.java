@@ -1,0 +1,2 @@
+extends MyMapper<UserFans> {
+}

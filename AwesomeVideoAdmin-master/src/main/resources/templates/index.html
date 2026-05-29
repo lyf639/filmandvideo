@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--全局样式-->
+<head th:include="/common/commonHeaderCSS::loadCommonHeaderCSS('lyf电影后台管理')">
+</head>
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+    <div class="page-wrapper">
+        <!--引入header页面-->
+        <div th:include="/common/header::header"></div>
+
+        <!-- BEGIN HEADER & CONTENT DIVIDER -->
+        <div class="clearfix"></div>
+        <!-- END HEADER & CONTENT DIVIDER -->
+
+        <div class="page-container">
+            <!-- 菜单 start -->
+            <div th:include="/common/menu::menu"></div>
+            <!-- 菜单 end -->
+
+            <!-- BEGIN CONTENT -->
+            <div class="page-content-wrapper">
+                <!-- BEGIN CONTENT BODY -->
+                <div class="page-content">
+                    <div class="page-content-body">
+                        <div th:include="showInfo"></div>
+                    </div>
+                </div>
+                <!-- END CONTENT BODY -->
+            </div>
+            <!-- END CONTENT -->
+        </div>
+    </div>
+
+    <!-- 公共footer start -->
+    <div th:include="/common/footer::footer"></div>
+    <!-- 公共footer end -->
+
+    <!--全局JS-->
+    <div th:replace="/common/commonFooterJS::loadFooterJS"></div>
+</body>
+</html>

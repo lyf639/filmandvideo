@@ -1,0 +1,43 @@
+{
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#937bf5",
+    "list": [
+      {
+        "iconPath": "pages/resource/images/logoa.jpeg",
+        "selectedIconPath": "pages/resource/images/logoa.jpeg",
+        "pagePath": "pages/movie/movie",
+        "text": "首页"
+      },
+      {
+        "iconPath": "pages/resource/images/logoa.jpeg",
+        "selectedIconPath": "pages/resource/images/logoa.jpeg",
+        "pagePath": "pages/index/index",
+        "text": "短视频"
+      }
+      
+    ]
+  },
+  "pages": [
+    "pages/movie/movie",
+    "pages/userLogin/login",
+    "pages/index/index",
+    "pages/videoinfo/videoinfo",
+    "pages/report/report",
+    "pages/mine/mine",
+    "pages/userRegist/regist",
+    "pages/chooseBgm/chooseBgm",
+    "pages/searchVideo/searchVideo"
+    
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "电影赏析小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}
